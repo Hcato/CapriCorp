@@ -1,0 +1,74 @@
+# ==============================================================================
+# Capri Desktop Companion — .gitignore
+# Resguarda API keys, memoria personal, modelos pesados, entornos y builds.
+# ==============================================================================
+
+# --- 1. Secretos, API Keys y Configuración Sensible (CRÍTICO) ---
+.env
+.env.*
+backend/data/brain_config.json
+*.key
+*.pem
+*credentials*.json
+*secrets*.json
+
+# --- 2. Datos Personales, Memoria y Transcripciones de Capri ---
+backend/data/me.md
+backend/data/memories.md
+backend/data/memory.json
+backend/data/reminders.json
+backend/data/reminders_dated.json
+backend/data/lookout_watches.json
+backend/data/websites.json
+backend/data/voice_config.json
+backend/data/transcripts/
+backend/data/antigravity_queue/
+backend/data/audit_logs/
+backend/data/clones/
+
+# --- 3. Modelos Locales y Pesados (Voz Kokoro / IA) ---
+backend/data/voice/
+*.onnx
+*.bin
+*.gguf
+*.safetensors
+*.pt
+*.pth
+
+# --- 4. Logs y Temporales ---
+*.log
+server.log
+*.tmp
+*.bak
+backend/**/*.wav
+
+# --- 5. Python y Entornos Virtuales ---
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# --- 6. Flutter / Dart / Windows Build ---
+frontend/build/
+frontend/.dart_tool/
+frontend/.flutter-plugins
+frontend/.flutter-plugins-dependencies
+frontend/.packages
+frontend/windows/flutter/ephemeral/
+frontend/macos/Flutter/ephemeral/
+frontend/linux/flutter/ephemeral/
+
+# --- 7. Sistema Operativo e IDEs ---
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.swp
+*.swo

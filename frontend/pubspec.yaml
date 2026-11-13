@@ -1,0 +1,43 @@
+name: frontend
+description: "Capri Desktop Companion Overlay"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.11.5
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  window_manager: ^0.5.2
+  web_socket_channel: ^3.0.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/sprites/
+    - assets/capri/
+    - assets/docs/
+    - assets/icons/
+    - assets/desk/door/idle/
+    - assets/desk/door/intro/
+    - assets/desk/door/sfx/
+    - assets/desk/mini/
+    - assets/desk/skins/capri/
+    - assets/desk/skins/watcher/
+    - assets/desk/voice/
+
+  fonts:
+    - family: ShareTechMono
+      fonts:
+        - asset: assets/desk/fonts/ShareTechMono-Regular.ttf
+
+  shaders:
+    - shaders/capri.frag

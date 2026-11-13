@@ -1,0 +1,25 @@
+# Dependencias del Núcleo del Asistente Claret (Windows 11 + GPU RTX)
+
+# Speech-to-Text (STT) acelerado por GPU / CPU
+faster-whisper>=1.0.3
+ctranslate2>=4.0.0
+
+# Cliente de Ollama para el modelo LLM local (Qwen 2.5 / Llama 3.2)
+ollama>=0.3.3
+
+# Text-to-Speech (TTS) de baja latencia sin consumo de VRAM
+edge-tts>=6.1.12
+
+# Captura y manipulación de audio de baja latencia
+sounddevice>=0.4.6
+soundfile>=0.12.1
+numpy>=1.24.3,<2.0.0
+
+# Reproducción de audio y utilidades multimedia
+pygame>=2.5.2
+
+# Detección de teclas para Push-to-Talk sin requerir permisos de administrador
+pynput>=1.7.6
+
+# Limpieza de texto para TTS (remover markdown antes de sintetizar voz)
+regex>=2023.10.3
